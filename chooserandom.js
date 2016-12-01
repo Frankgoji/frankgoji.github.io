@@ -3,7 +3,7 @@
 function clickButton() {
     _links = document.getElementsByClassName("pl-video-title-link yt-uix-tile-link yt-uix-sessionlink  spf-link ");
     _link = _links[Math.floor(Math.random() * _links.length)];
-    _rand = Math.floor((Math.random() * 10) + 1);
+    _rand = Math.floor((Math.random() * 1000) + 1);
     window.location.href = _link.href + "&shuffle=" + _rand;
 }
 
