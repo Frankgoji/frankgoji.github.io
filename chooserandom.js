@@ -16,4 +16,4 @@ var load_button_interval = setInterval(function(){
         clearInterval(load_button_interval);
         clickButton();
     }
-}, 1000);
+}, 2000);
