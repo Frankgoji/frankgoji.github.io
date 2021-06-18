@@ -1,0 +1,153 @@
+body {
+    overflow-x: auto;
+}
+.root {
+    text-align: center;
+    height: 100%;
+}
+.error {
+    border-color: red;
+}
+.single_number_input {
+    width: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* Controls style */
+.controls {
+    margin: 5px auto 20px;
+}
+.controls_box {
+    margin: 5px auto 0px;
+    width: 90%;
+    border-top: 1px solid darkslategrey;
+}
+.controls button {
+    margin: 3px;
+    padding: 3px 6px;
+    font-size: 100%;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    background-color: darkslategrey;
+}
+.controls button:disabled {
+    color: grey;
+    background-color: #1f3333;
+}
+.controls_contents {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.header.controls_contents {
+    margin-top: 10px;
+}
+.contents_box .controls_contents {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Sudoku style */
+.cell_container {
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+}
+.default_cell {
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-color: darkslategray;
+    border-width: 1px;
+    font-size: 30px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.sudoku_row {
+    height: 60px;
+    white-space: nowrap;
+}
+.top_border_normal {
+    border-top-width: 8px;
+}
+.right_border_normal {
+    border-right-width: 8px;
+}
+.bottom_border_normal {
+    border-bottom-width: 8px;
+}
+.left_border_normal {
+    border-left-width: 8px;
+}
+.top_border_group {
+    border-top-width: 4px;
+}
+.right_border_group {
+    border-right-width: 4px;
+}
+.bottom_border_group {
+    border-bottom-width: 4px;
+}
+.left_border_group {
+    border-left-width: 4px;
+}
+form {
+    display: inline-block;
+}
+button:disabled {
+    opacity: 70%;
+}
+.is_selecting input {
+    opacity: 100%;
+    cursor: default;
+}
+.is_selecting input:hover, .drag_selected input {
+    background-color: lightgreen !important;
+    opacity: 50%;
+    cursor: default;
+}
+.drag_selected.subtract input {
+    background-color: black !important;
+    opacity: 100%;
+}
+.selected {
+    background-color: lightgreen !important;
+}
+.corner {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    background-color: darkslategray;
+}
+.corner.up-right {
+    left: 56px;
+}
+.corner.up-left {
+    /* No positioning needed */
+}
+.corner.down-right {
+    top: 56px;
+    left: 56px;
+}
+.corner.down-left {
+    top: 56px;
+}
+.small {
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 25px;
+    padding-left: 4px;
+}
+.guess_display {
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 40px;
+}
