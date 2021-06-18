@@ -1,4 +1,6 @@
 body {
+    background-color: black;
+    color: white;
     overflow-x: auto;
 }
 .root {
@@ -48,6 +50,11 @@ body {
 .contents_box .controls_contents {
     padding-left: 30px;
     padding-right: 30px;
+}
+.header li {
+    display: inline-block;
+    margin-right: 15px;
+    margin-left: 15px;
 }
 
 /* Sudoku style */
