@@ -54,8 +54,14 @@ body {
 }
 .header li {
     display: inline-block;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.header .undo_button, .header .undo_li {
+    margin-right: 0px;
+}
+.header .redo_button, .header .redo_li {
+    margin-left: 0px;
 }
 
 /* Sudoku style */
