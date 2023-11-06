@@ -1,0 +1,135 @@
+body {
+    background-color: black;
+    color: grey;
+    overflow-x: auto;
+    /*height: 100%;
+    width: 100%;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+html, body, #onboarding {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.root {
+    text-align: center;
+    border: 2px solid gray;
+    padding: 20px;
+    min-height: 350px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.root-container {
+    background-color: #1c1c1c;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button.horizontal_buttons, .horizontal_buttons button, .dialog button {
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: gray;
+    border: none;
+    padding: 4px 10px;
+    font-size: 16px;
+}
+button.horizontal_buttons:hover, .horizontal_buttons button:hover, .dialog button:hover,
+button.horizontal_buttons.selected, .horizontal_buttons button.selected {
+    background-color: #494949;
+}
+.error {
+    color: red;
+}
+.relative {
+    position: relative;
+}
+.x {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 50px;
+}
+.x:active {
+    filter: brightness(50%);
+}
+.dialog {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    border: 2px solid gray;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dialog div div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.static {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+table {
+    margin-bottom: 20px;
+}
+
+/* PARTICIPANTS */
+.participant-box {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+}
+.participant-row {
+    display: flex;
+    align-items: start;
+    margin-bottom: 5px;
+}
+
+/* ANIMATION FOR EYES */
+@keyframes blurred-anim {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+.blurred {
+    position: absolute;
+    top: -2px;
+    right: -460px;
+    animation: blurred-anim 1000ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+.eyes {
+    position: absolute;
+    top: -2px;
+    right: -460px;
+}
+
+/* ANIMATION FOR BLACK HOLE */
+@keyframes black-hole-anim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0);
+    }
+}
+.black-hole {
+    animation: black-hole-anim 1000ms;
+    animation-timing-function: cubic-bezier(0.90, 0, 1.0, 1.0);
+    animation-fill-mode: forwards;
+}
