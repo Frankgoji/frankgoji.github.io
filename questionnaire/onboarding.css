@@ -73,6 +73,7 @@ button.horizontal_buttons.selected, .horizontal_buttons button.selected {
 .dialog div div {
     margin-top: 5px;
     margin-bottom: 5px;
+    text-align: center;
 }
 .static {
     position: absolute;
@@ -94,6 +95,12 @@ table {
     display: flex;
     align-items: start;
     margin-bottom: 5px;
+}
+
+.text-blur p,
+.text-blur .horizontal_buttons,
+.text-blur h1 {
+    filter: blur(0.8px);
 }
 
 /* ANIMATION FOR EYES */
