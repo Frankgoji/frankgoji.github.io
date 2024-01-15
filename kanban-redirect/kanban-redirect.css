@@ -1,0 +1,27 @@
+body {
+    background-color: black;
+    color: grey;
+    overflow-x: auto;
+    /*height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;*/
+}
+html, body, {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+.root {
+    text-align: center;
+    /*border: 2px solid gray;
+    padding: 20px;
+    min-height: 350px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
