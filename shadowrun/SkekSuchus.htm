@@ -1,0 +1,324 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:msxsl="urn:schemas-microsoft-com:xslt"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>SkekSuchus</title><style type="text/css">
+					*
+					{
+						font-family: segoe condensed, tahoma, trebuchet ms, arial;
+						font-size: 8pt;
+						text-align: left;
+					}
+					.tableborder
+					{
+						border: solid 2px #1c4a2d;
+					}
+					.conditionmonitorbox
+					{
+						border: solid 2px #1c4a2d;
+						width: 24px;
+						height: 24px;
+						text-align: right;
+						vertical-align: text-bottom;
+						font-weight: bold;
+					}
+					.conditionmonitorboxfilled
+					{
+						border: solid 2px #1c4a2d;
+						width: 24px;
+						height: 24px;
+						text-align: right;
+						vertical-align: text-bottom;
+						font-weight: bold;
+						background-color: #bbbbbb;
+					}
+					.conditionmonitorboxnotused
+					{
+						border: solid 0px #1c4a2d;
+						width: 24px;
+						height: 24px;
+						text-align: right;
+						vertical-align: text-bottom;
+						font-weight: bold;
+						background-color: #FFFFFF;
+					}
+					.rowsummary
+					{
+						filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3a6349', endColorstr='#769582'); /* for IE */
+						background: -webkit-gradient(linear, left top, left bottom, from(#3a6349), to(#769582)); /* for webkit browsers */
+						background: -moz-linear-gradient(top,  #3a6349,  #769582); /* for firefox 3.6+ */ 
+						background-color: #3a6349;
+						color: #ffffff;
+						font-weight: bold;
+						font-style: italic;
+					}
+					.rowsummarybutton
+					{
+						color: #ffffff;
+						font-weight: bold;
+						margin-left: 20px;
+					}
+					.attributecell
+					{
+					}
+					.attributecell p
+					{
+						padding: 2px;
+						margin: 4px;
+						border: solid 1px #1c4a2d;
+					}
+					.indent
+					{
+						padding-left: 20px;
+					}
+					.hseparator
+					{
+						height: 5px;
+					}
+					.vseparator
+					{
+						width: 5px;
+					}
+					.block
+					{
+						page-break-inside: avoid;
+					}
+					.zalomit
+					{
+						page-break-after: always;
+					}
+					.notesrow
+					{
+						padding-left: 10px;
+					}
+					
+					@media print
+					{
+						.zalomit
+						{
+							page-break-after: always;
+						}
+						.sectionhide
+						{
+							visibility: hidden;
+							display:none;
+						}
+						.rowsummarybutton
+						{
+							visibility: hidden;
+							display: none;
+						}
+						.table
+						{
+							width: 100%;
+						}
+					}
+					
+					@media screen {
+						.sectionhide
+						{
+							visibility: visible;
+						}
+						.rowsummarybutton
+						{
+							visibility: visible;
+						}
+					}
+				</style><script type="text/javascript">
+						function zalomit(what,idx)
+						{
+							var elem = document.getElementById(idx); 
+							if (elem.style.pageBreakAfter == 'always') {
+								txt = "NO";
+								elem.style.pageBreakAfter = 'auto';
+							}
+							else {
+								txt = "YES";
+								elem.style.pageBreakAfter = 'always';
+							}
+							what.innerHTML = "Page Break: " + txt;
+						}
+						function showhide(what,idx)
+						{
+							var elem = document.getElementById(idx); 
+							if (elem.className != 'sectionhide') {
+								txt = "NO";
+								elem.className = 'sectionhide';
+							}
+							else {
+								txt = "YES";
+								elem.className = 'block';
+							}
+							what.innerHTML = "Show: " + txt;
+						}
+					</script></head><body><div class="block" id="PersonalDataBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="2" cellspacing="0" width="100%"><tbody><tr><td colspan="4"><strong>NAME/ALIAS:</strong> SkekSuchus (SkekSuchus)</td><td colspan="4"><strong>PLAYER:</strong> Franklin</td><td colspan="2">
+										MOVEMENT: 10/25, Swim: 5</td></tr><tr><td colspan="4">
+										METATYPE:
+										Human</td><td width="10%">AGE:</td><td width="10%">33</td><td width="10%">SEX:</td><td width="10%">M</td><td width="10%">NUYEN:</td><td width="10%">600</td></tr><tr><td width="10%">HEIGHT:</td><td width="10%">5'11</td><td width="10%">WEIGHT:</td><td width="10%">230</td><td width="10%">HAIR:</td><td width="10%">None</td><td width="10%">EYES:</td><td width="10%">Cats Eyes</td><td width="10%">SKIN:</td><td width="10%">Scaly</td></tr><tr><td width="10%">KARMA:</td><td width="10%">0</td><td width="10%">TOTAL KARMA:</td><td width="10%">0</td><td width="10%">STREET CRED:</td><td width="10%">0</td><td width="10%">NOTORIETY:</td><td width="10%">0</td><td width="10%">PUBLIC AWARE:</td><td width="10%">0</td></tr><tr><td width="10%">COMPOSURE:</td><td width="10%">4</td><td width="10%">JUDGE INTENTIONS:</td><td width="10%">5</td><td width="10%">LIFT/CARRY:</td><td width="10%">7</td><td width="10%">LIFT/CARRY WEIGHT:</td><td width="10%">60 kg/40 kg
+									</td><td width="10%">MEMORY:</td><td width="10%">4</td></tr><tr><td class="rowsummary" colspan="10">
+										PERSONAL DATA
+										<span class="rowsummarybutton" onclick="showhide(this,'PersonalDataBlock');" colspan="2">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'PersonalDataBlock');" colspan="2">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="AttributesBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td style="text-align:center;" class="attributecell" width="25%"><strong>PHYSICAL ATTRIBUTES</strong></td><td style="text-align:center;" class="attributecell" width="25%"><strong>MENTAL ATTRIBUTES</strong></td><td style="text-align:center;" class="attributecell" width="25%"><strong>SPECIAL ATTRIBUTES</strong></td><td style="text-align:center;" class="attributecell" width="25%"><strong>SPECIAL ATTRIBUTES</strong></td></tr><tr><td class="attributecell" width="25%"><p>
+											BODY: 3</p></td><td class="attributecell" width="25%"><p>
+											CHARISMA: 1</p></td><td class="attributecell" width="25%"><p>
+											EDGE: 5</p></td><td class="attributecell" width="25%"><p>CURRENT EDGE POINTS:</p></td></tr><tr><td class="attributecell" width="25%"><p>
+											AGILITY: 5
+												(4)
+											</p></td><td class="attributecell" width="25%"><p>
+											INTUITION: 3</p></td><td class="attributecell" width="25%"><p>
+											ESSENCE: 5.4</p></td><td class="attributecell" width="25%"><p>
+											ASTRAL INIT: 6</p></td></tr><tr><td class="attributecell" width="25%"><p>
+											REACTION: 6
+												(7)
+											</p></td><td class="attributecell" width="25%"><p>
+											LOGIC: 1</p></td><td class="attributecell" width="25%"><p>
+											INITIATIVE: 9
+												(10)
+											</p></td><td class="attributecell" width="25%"><p>
+											MATRIX INIT: 3</p></td></tr><tr><td class="attributecell" width="25%"><p>
+											STRENGTH: 4</p></td><td class="attributecell" width="25%"><p>
+											WILLPOWER: 3</p></td><td class="attributecell" width="25%"><p>
+												MAGIC: 5
+											�
+										</p></td><td class="attributecell" width="25%"><p>
+											INIT PASSES: 1
+												(2)
+											
+												���MATRIX: 1
+												���ASTRAL: 3</p></td></tr><tr><td class="rowsummary" colspan="4">
+										ATTRIBUTES
+										<span class="rowsummarybutton" onclick="showhide(this,'AttributesBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'AttributesBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="SkillsBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td style="text-align:center;" valign="top" width="33%"><strong>ACTIVE SKILLS</strong><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="50%"><strong>SKILL NAME</strong></td><td style="text-align:center;" width="10%"><strong>POOL</strong></td><td style="text-align:center;" width="10%"><strong>RTG.</strong></td><td style="text-align:center;" width="10%"><strong>ATT.</strong></td><td style="text-align:center;" width="10%"><strong>R. MOD.</strong></td><td style="text-align:center;" width="10%"><strong>P. MOD.</strong></td></tr><tr><td valign="top" width="50%">Archery (Crossbows)</td><td style="text-align:center;" valign="top" width="10%">9 (11)</td><td style="text-align:center;" valign="top" width="10%">5</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Artisan</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Automatics</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Blades</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Climbing</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Clubs</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Disguise</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Diving</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Dodge (Ranged Combat)</td><td style="text-align:center;" valign="top" width="10%">12 (14)</td><td style="text-align:center;" valign="top" width="10%">5</td><td style="text-align:center;" valign="top" width="10%">7</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Escape Artist</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Forgery</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Gunnery</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Gymnastics</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Heavy Weapons</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Infiltration</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Locksmith</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr></tbody></table></td><td style="border-left: solid 1px #1c4a2d; border-right: solid 1px #1c4a2d; text-align:center;" valign="top" width="33%"><strong>ACTIVE SKILLS</strong><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="50%"><strong>SKILL NAME</strong></td><td style="text-align:center;" width="10%"><strong>POOL</strong></td><td style="text-align:center;" width="10%"><strong>RTG.</strong></td><td style="text-align:center;" width="10%"><strong>ATT.</strong></td><td style="text-align:center;" width="10%"><strong>R. MOD.</strong></td><td style="text-align:center;" width="10%"><strong>P. MOD.</strong></td></tr><tr><td valign="top" width="50%">Longarms</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Navigation</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Palming</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Parachuting</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Perception</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Pilot Ground Craft</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">7</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Pilot Watercraft</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">7</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Pistols</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Running</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Shadowing</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Survival</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Swimming</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Throwing Weapons (Throwing Knives)</td><td style="text-align:center;" valign="top" width="10%">6 (8)</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Tracking</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Unarmed Combat</td><td style="text-align:center;" valign="top" width="10%">7</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr></tbody></table></td><td style="text-align:center;" valign="top" width="33%"><strong>KNOWLEDGE SKILLS</strong><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="50%"><strong>SKILL NAME</strong></td><td style="text-align:center;" width="10%"><strong>POOL</strong></td><td style="text-align:center;" width="10%"><strong>RTG.</strong></td><td style="text-align:center;" width="10%"><strong>ATT.</strong></td><td style="text-align:center;" width="10%"><strong>R. MOD.</strong></td><td style="text-align:center;" width="10%"><strong>P. MOD.</strong></td></tr><tr><td valign="top" width="50%">Language: English</td><td style="text-align:center;" valign="top" width="10%">
+															N
+														</td><td style="text-align:center;" valign="top" width="10%">
+															N
+														</td><td style="text-align:center;" valign="top" width="10%">
+															N
+														</td><td style="text-align:center;" valign="top" width="10%">
+															N
+														</td><td style="text-align:center;" valign="top" width="10%">
+															N
+														</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Language: Spanish</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Reptilian Biology (Crocodilians)</td><td style="text-align:center;" valign="top" width="10%">5 (7)</td><td style="text-align:center;" valign="top" width="10%">4</td><td style="text-align:center;" valign="top" width="10%">1</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Smuggling Rates</td><td style="text-align:center;" valign="top" width="10%">5</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr><tr><td valign="top" width="50%">Tandoran Culture</td><td style="text-align:center;" valign="top" width="10%">3</td><td style="text-align:center;" valign="top" width="10%">2</td><td style="text-align:center;" valign="top" width="10%">1</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="10%">0</td></tr></tbody></table></td></tr><tr><td class="rowsummary" colspan="3">
+										SKILLS
+										<span class="rowsummarybutton" onclick="showhide(this,'SkillsBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'SkillsBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="ContactConditionBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td style="text-align:center;" valign="top" width="67%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="60%"><strong>CONTACT NAME</strong></td><td style="text-align:center;" width="10%"><strong>TYPE</strong></td><td style="text-align:center;" width="15%"><strong>CONNECTION</strong></td><td style="text-align:center;" width="15%"><strong>LOYALTY/INCIDENCE</strong></td></tr><tr class="textrow" valign="top"><td width="60%">Bub</td><td style="text-align:center;" valign="top" width="10%">Contact</td><td style="text-align:center;" valign="top" width="15%">3</td><td style="text-align:center;" valign="top" width="15%">2</td></tr><tr><td colspan="4" class="notesrow"> This former friend was involved in the smuggling business and thus
+<br> has many connections with people who need a job done. Knew SkekSuchus as
+<br> they were both proficient sailors/boaters. But since SkekSuchus has left
+<br> the sea behind, their connection is far lesser and honestly, he kind of
+<br> thinks SkekSuchus has lost his marbles and needs some help.</td></tr><tr class="textrow" bgcolor="#e4e4e4" valign="top"><td width="60%">Morta</td><td style="text-align:center;" valign="top" width="10%">Contact</td><td style="text-align:center;" valign="top" width="15%">6</td><td style="text-align:center;" valign="top" width="15%">1</td></tr><tr bgcolor="#e4e4e4"><td colspan="4" class="notesrow"> SkekSuchus has been so plagued by the nightmares of the sea that he has
+<br> turned to desperate measures in an attempt to gain understanding, including
+<br> seeing a dream interpreter/astral percepter. The one he's seeing right now
+<br> is strangely well-connected; maybe everyone has problems they need to ask
+<br> about. If SkekSuchus is lucky, she may drop a hint about something she heard
+<br> from other clients. But it'd take a LOT of buttering up for her to say much.</td></tr><tr class="textrow" valign="top"><td width="60%">Ock</td><td style="text-align:center;" valign="top" width="10%">Contact</td><td style="text-align:center;" valign="top" width="15%">2</td><td style="text-align:center;" valign="top" width="15%">5</td></tr><tr><td colspan="4" class="notesrow"> SkekSuchus has an essentially academic understanding of reptilian biology,
+<br> particularly crocodiles, but it didn't come from attending classes himself.
+<br> Instead, when the SURGE mutations began to come, he began to get seen by
+<br> various medical professionals (particularly students, as they don't charge
+<br> as much). One particular student saw SkekSuchus as a potential PhD thesis,
+<br> but they didn't anticipate the reciprocal curiosity in the relationship. As
+<br> they studied SkekSuchus and his mutation, SkekSuchus would ask them everything
+<br> they know about biology, and by now they are very close friends.</td></tr><tr><td class="rowsummary" colspan="4">
+																CONTACTS &amp; ENEMIES
+															</td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr><tr><td><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="80%"><strong>QUALITY NAME</strong></td><td width="20%"></td></tr><tr><td valign="top" width="80%">Adept</td><td valign="top" width="20%">SR4 90</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="80%">Allergy (Uncommon, Mild) (Mild allergy to pine products (pine oil, bark, etc))</td><td valign="top" width="20%">SR4 94</td></tr><tr><td valign="top" width="80%">Guts</td><td valign="top" width="20%">SR4 91</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="80%">Quick Healer</td><td valign="top" width="20%">SR4 92</td></tr><tr><td valign="top" width="80%">Toughness</td><td valign="top" width="20%">SR4 93</td></tr><tr><td class="rowsummary" colspan="2">
+																QUALITIES
+															</td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr><tr><td><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="50%"><strong>ARMOR</strong></td><td style="text-align:center;" width="30%"><strong>BALLISTIC/IMPACT</strong></td><td style="text-align:center;" width="20%"></td></tr><tr><td width="50%"><strong>TOTAL</strong></td><td style="text-align:center;" width="30%">8/6</td><td style="text-align:center;" width="20%"></td></tr><tr><td valign="top" width="50%">Armor Jacket</td><td style="text-align:center;" valign="top" width="30%">8/6</td><td style="text-align:center;" valign="top" width="20%">SR4 326</td></tr><tr><td class="rowsummary" colspan="3">
+																ARMOR
+																<span class="rowsummarybutton" onclick="showhide(this,'ContactConditionBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'ContactConditionBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr></tbody></table></td><td class="vseparator">��</td><td style="text-align:center;" valign="top" width="33%"><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td style="text-align:center;" width="50%"><strong>PHYSICAL DAMAGE TRACK</strong></td><td style="text-align:center;" width="50%"><strong>STUN DAMAGE TRACK</strong></td></tr><tr><td valign="top" width="50%"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      -1</td></tr><tr><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      -2</td></tr><tr><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      -3</td></tr><tr><td class="conditionmonitorbox">
+      �
+      
+          Down
+        </td><td class="conditionmonitorbox">
+      �
+      
+          OVR
+        </td><td class="conditionmonitorbox">
+      �
+      
+          OVR
+        </td></tr><tr><td class="conditionmonitorbox">
+      �
+      
+          OVR
+        </td><td class="conditionmonitorbox">
+      �
+      
+          DEAD
+        </td><td class="conditionmonitorboxnotused"></td></tr></tbody></table></td></tr></tbody></table></td><td valign="top" width="50%"><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0"><tbody><tr><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      -1</td></tr><tr><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      -2</td></tr><tr><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      </td><td class="conditionmonitorbox">
+      �
+      -3</td></tr><tr><td class="conditionmonitorbox">
+      �
+      
+          Down
+        </td><td class="conditionmonitorboxnotused"></td><td class="conditionmonitorboxnotused"></td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td class="rowsummary" colspan="2">
+													CONDITION MONITOR
+												</td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="WeaponBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td valign="top" width="67%"><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="20%"><strong>WEAPON</strong></td><td style="text-align:center;" width="10%"><strong>POOL</strong></td><td style="text-align:center;" width="15%"><strong>DAMAGE</strong></td><td style="text-align:center;" width="10%"><strong>AP</strong></td><td style="text-align:center;" width="11%"><strong>MODE</strong></td><td style="text-align:center;" width="10%"><strong>RC</strong></td><td style="text-align:center;" width="13%"><strong>AMMO</strong></td><td style="text-align:center;" width="11%"></td></tr><tr><td valign="top" width="20%">Grenade: Smoke</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="15%">(10m Radius)</td><td style="text-align:center;" valign="top" width="10%">-</td><td style="text-align:center;" valign="top" width="11%"></td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="13%">0</td><td style="text-align:center;" valign="top" width="11%">SR4 324</td></tr><tr><td></td><td style="text-align:center;" valign="top">S: 0-8</td><td style="text-align:center;" valign="top">M: 9-16</td><td style="text-align:center;" valign="top">L: 17-24</td><td style="text-align:center;" valign="top">E: 25-40</td><td colspan="3"></td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="20%">Medium Crossbow</td><td style="text-align:center;" valign="top" width="10%">9 (11)</td><td style="text-align:center;" valign="top" width="15%">5P</td><td style="text-align:center;" valign="top" width="10%">-</td><td style="text-align:center;" valign="top" width="11%">SS</td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="13%">1</td><td style="text-align:center;" valign="top" width="11%">SR4 316</td></tr><tr bgcolor="#e4e4e4"><td></td><td style="text-align:center;" valign="top">S: 0-9</td><td style="text-align:center;" valign="top">M: 10-36</td><td style="text-align:center;" valign="top">L: 37-90</td><td style="text-align:center;" valign="top">E: 91-150</td><td colspan="3"></td></tr><tr><td valign="top" width="20%">Throwing Knife</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="15%">3P</td><td style="text-align:center;" valign="top" width="10%">-</td><td style="text-align:center;" valign="top" width="11%"></td><td style="text-align:center;" valign="top" width="10%">0</td><td style="text-align:center;" valign="top" width="13%">0</td><td style="text-align:center;" valign="top" width="11%">SR4 316</td></tr><tr><td></td><td style="text-align:center;" valign="top">S: 0-4</td><td style="text-align:center;" valign="top">M: 5-8</td><td style="text-align:center;" valign="top">L: 9-12</td><td style="text-align:center;" valign="top">E: 13-20</td><td colspan="3"></td></tr><tr><td class="rowsummary" colspan="8">
+													RANGED WEAPONS
+													<span class="rowsummarybutton" onclick="showhide(this,'WeaponBlock');" colspan="2">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'WeaponBlock');" colspan="2">Page Break: NO</span></td></tr></tbody></table></td><td class="vseparator">��</td><td valign="top" width="33%"><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="40%"><strong>WEAPON</strong></td><td style="text-align:center;" width="10%"><strong>POOL</strong></td><td style="text-align:center;" width="13%"><strong>DAMAGE</strong></td><td style="text-align:center;" width="13%"><strong>AP</strong></td><td style="text-align:center;" width="8%"><strong>REACH</strong></td><td style="text-align:center;" width="16%"></td></tr><tr><td valign="top" width="40%">Survival Knife</td><td style="text-align:center;" valign="top" width="10%">6</td><td style="text-align:center;" valign="top" width="13%">3P</td><td style="text-align:center;" valign="top" width="13%">-1</td><td style="text-align:center;" valign="top" width="8%">0</td><td style="text-align:center;" valign="top" width="16%">SR4 315</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="40%">Unarmed Attack</td><td style="text-align:center;" valign="top" width="10%">7</td><td style="text-align:center;" valign="top" width="13%">2S</td><td style="text-align:center;" valign="top" width="13%">-</td><td style="text-align:center;" valign="top" width="8%">0</td><td style="text-align:center;" valign="top" width="16%">SR4 159</td></tr><tr><td class="rowsummary" colspan="6">
+													MELEE WEAPONS
+												</td></tr></tbody></table></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="CyberwareBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="50%"><strong>IMPLANT</strong></td><td style="text-align:center;" width="20%"><strong>ESSENCE</strong></td><td style="text-align:center;" width="20%"><strong>GRADE</strong></td><td style="text-align:center;" width="10%"></td></tr><tr><td valign="top" width="50%">Cat's Eyes</td><td style="text-align:center;" valign="top" width="20%">0.1</td><td style="text-align:center;" valign="top" width="20%">Standard</td><td style="text-align:center;" valign="top" width="20%">SR4 345</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="50%">Digestive Expansion</td><td style="text-align:center;" valign="top" width="20%">0.5</td><td style="text-align:center;" valign="top" width="20%">Standard</td><td style="text-align:center;" valign="top" width="20%">SR4 345</td></tr><tr><td class="rowsummary" colspan="4">
+										CYBERWARE/BIOWARE
+										<span class="rowsummarybutton" onclick="showhide(this,'CyberwareBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'CyberwareBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="ComlinkBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="18%"><strong>COMMLINK</strong></td><td style="text-align:center;" width="18%"><strong>RESPONSE</strong></td><td style="text-align:center;" width="18%"><strong>SYSTEM</strong></td><td style="text-align:center;" width="18%"><strong>FIREWALL</strong></td><td style="text-align:center;" width="18%"><strong>SIGNAL</strong></td><td style="text-align:center;" width="10%"></td></tr><tr><td colspan="6"><strong>PROGRAMS</strong><br>Suite: Basic+
+											[Analyze 3; Browse 3; Command 1; Edit 3]
+										</td></tr><tr><td class="rowsummary" colspan="6">
+										COMMLINK/PROGRAMS
+										<span class="rowsummarybutton" onclick="showhide(this,'ComlinkBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'ComlinkBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="PowerBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td><table class="tableborder" border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="40%"><strong>NAME</strong></td><td style="text-align:center;" width="20%"><strong>RATING</strong></td><td style="text-align:center;" width="20%"><strong>POINTS (TOTAL)</strong></td><td style="text-align:center;" width="20%"></td></tr><tr><td width="40%">Attribute Boost (STR)</td><td style="text-align:center;" width="20%">3</td><td style="text-align:center;" width="20%">0.25 (0.750)
+									</td><td style="text-align:center;" width="20%">SR4 195</td></tr><tr bgcolor="#e4e4e4"><td width="40%">Attribute Boost (AGI)</td><td style="text-align:center;" width="20%">3</td><td style="text-align:center;" width="20%">0.25 (0.750)
+									</td><td style="text-align:center;" width="20%">SR4 195</td></tr><tr><td width="40%">Improved Reflexes 1</td><td style="text-align:center;" width="20%"></td><td style="text-align:center;" width="20%">1.5 (1.50)
+									</td><td style="text-align:center;" width="20%">SR4 196</td></tr><tr bgcolor="#e4e4e4"><td width="40%">Kinesics</td><td style="text-align:center;" width="20%">1</td><td style="text-align:center;" width="20%">0.5 (0.50)
+									</td><td style="text-align:center;" width="20%">SR4 196</td></tr><tr><td width="40%">Spell Resistance</td><td style="text-align:center;" width="20%">1</td><td style="text-align:center;" width="20%">0.5 (0.50)
+									</td><td style="text-align:center;" width="20%">SR4 197</td></tr><tr><td class="rowsummary" colspan="4">
+										ADEPT POWERS
+										<span class="rowsummarybutton" onclick="showhide(this,'PowerBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'PowerBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="LifestylesBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="50%"><strong>LIFESTYLE</strong></td><td style="text-align:center;" width="30%"><strong>MONTHS</strong></td><td width="20%"></td></tr><tr><td width="50%">Low</td><td style="text-align:center;" width="30%">2</td><td width="20%">SR4 268</td></tr><tr><td class="rowsummary" colspan="3">
+										LIFESTYLE
+										<span class="rowsummarybutton" onclick="showhide(this,'LifestylesBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'LifestylesBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="GearBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td style="text-align:center;" valign="top" width="33%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="55%"><strong>NAME</strong></td><td style="text-align:center;" width="15%"><strong>RTG.</strong></td><td style="text-align:center;" width="15%"><strong>QTY.</strong></td><td style="text-align:center;" width="15%"></td></tr><tr><td colspan="4" style="border-bottom:solid black 1px;"><strong></strong></td></tr><tr><td valign="top" width="55%">Ammo: Bolt (Crossbows)</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">29</td><td style="text-align:center;" valign="top" width="15%">SR4 316</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="55%">AR Gloves</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 328</td></tr><tr><td valign="top" width="55%">Certified Credstick, Standard</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">2</td><td style="text-align:center;" valign="top" width="15%">SR4 331</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="55%">Concealable Holster</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 322</td></tr></tbody></table></td><td style="border-left: solid 1px #1c4a2d; border-right: solid 1px #1c4a2d; text-align:center;" valign="top" width="33%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="55%"><strong>NAME</strong></td><td style="text-align:center;" width="15%"><strong>RTG.</strong></td><td style="text-align:center;" width="15%"><strong>QTY.</strong></td><td style="text-align:center;" width="15%"></td></tr><tr><td colspan="4" style="border-bottom:solid black 1px;"><strong></strong></td></tr><tr><td valign="top" width="55%">Datachip</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 330</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="55%">Fake License (Medium Crossbow)</td><td style="text-align:center;" valign="top" width="15%">4</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 332</td></tr><tr><td valign="top" width="55%">Fake SIN (Jon Waylon)</td><td style="text-align:center;" valign="top" width="15%">3</td><td style="text-align:center;" valign="top" width="15%">2</td><td style="text-align:center;" valign="top" width="15%">SR4 332</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="55%">Goggles</td><td style="text-align:center;" valign="top" width="15%">2</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 332</td></tr><tr bgcolor="#e4e4e4"><td colspan="4" class="indent">Flare Compensation; Image Link</td></tr></tbody></table></td><td style="text-align:center;" valign="top" width="33%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td width="55%"><strong>NAME</strong></td><td style="text-align:center;" width="15%"><strong>RTG.</strong></td><td style="text-align:center;" width="15%"><strong>QTY.</strong></td><td style="text-align:center;" width="15%"></td></tr><tr><td colspan="4" style="border-bottom:solid black 1px;"><strong></strong></td></tr><tr><td valign="top" width="55%">Grenade: Smoke</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 324</td></tr><tr bgcolor="#e4e4e4"><td valign="top" width="55%">Suite: Basic+</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">1</td><td style="text-align:center;" valign="top" width="15%">SR4 232</td></tr><tr bgcolor="#e4e4e4"><td colspan="4" class="indent">Analyze 3; Browse 3; Command 1; Edit 3</td></tr><tr><td valign="top" width="55%">Throwing: Throwing Knife</td><td style="text-align:center;" valign="top" width="15%">-</td><td style="text-align:center;" valign="top" width="15%">10</td><td style="text-align:center;" valign="top" width="15%">SR4 316</td></tr></tbody></table></td></tr><tr><td class="rowsummary" colspan="3">
+										GEAR
+										<span class="rowsummarybutton" onclick="showhide(this,'GearBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'GearBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="DescriptionBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td>SkekSuchus
+ (SkekSu or Su for short) appears to be a large bipedal crocodilian. In reality, he was born as a 
+human, but experienced SURGE mutations in his adolescence that transformed him into the large 
+reptilian he now is. He now ekes a living taking on various violent jobs, empowered by his adept 
+practices and his arsenal of crossbow bolts and knives ("my other teeth" as he would call them).</td></tr><tr><td class="rowsummary">
+										DESCRIPTION
+										<span class="rowsummarybutton" onclick="showhide(this,'DescriptionBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'DescriptionBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div><div class="block" id="BackgroundBlock"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td class="tableborder" width="100%"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tbody><tr><td>The
+ family and friends that SkekSuchus grew up with were excellent navigators of all sorts of ships. As
+ such, he primarily grew up around merchants, smugglers, and even pirates. Some of the people around
+ him had a more humanitarian aspect and chose to help refugees pass borders by dodging the coast 
+guard and private ocean enforcers.
+<br>SkekSuchus adored and even worshipped the ocean. However, several years ago, SkekSuchus began to
+ be plagued with dreams and nightmares about the ocean. The dreams revolve around imagery of 
+drowning, megalophobia, and thalassophobia. Of particular fixation is the imagery of enormous 
+monsters that lie beneath the ocean's surface, that the vastness of the waters is soley to hide the 
+vastness of the creatures below.
+<br>Despite their love of the ocean, SkekSuchus began to experience intense fear and even physical 
+revulsion to the sea, and left his kin to go inland to work as a shadowrunner. SkekSuchus is 
+constantly being divided by those opposing forces: genuine adoration and worship of the ocean, and 
+mortal terror of it.</td></tr><tr><td class="rowsummary">
+										BACKGROUND
+										<span class="rowsummarybutton" onclick="showhide(this,'BackgroundBlock');" colspan="1">Show: YES</span><span class="rowsummarybutton" onclick="zalomit(this,'BackgroundBlock');" colspan="1">Page Break: NO</span></td></tr></tbody></table></td></tr><tr><td class="hseparator"></td></tr></tbody></table></div></body></html>
